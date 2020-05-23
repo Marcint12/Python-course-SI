@@ -1,0 +1,8 @@
+Kod otwiera aplikacje okienkową w tkiterze.
+Zasoby dodaje się klikając przycisk "Dodaj zasób...", w ramce odpowiedniej waluty w okienku "Portfel". W podobny sposób można usunąć dany zasób.
+Po wybraniu godziny oraz minuty i kliknięciu przycisku "Oblicz/Odśwież" można ustawić z jakiego czasu temu program ma liczyć
+	zmianę wartości.
+W okienku "Portfel" można też ustawić, dane których walut będą widoczne.
+Program zapisuje dodane i odjęte zasoby(a zatem też i ilość posiadanych zasobów) w pliku csv odpowiedniej waluty np. "btc.csv".
+W okienku "Historia Wpłat i Wypłat" można zobaczyć datę i wartość dodania lub odjęcia danej waluty.
+W okienku "Dane walut" są wyświetlane obecne 24 godzinne dane o dostępnych walutach.

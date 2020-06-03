@@ -1,0 +1,27 @@
+1) Który z symulowanych wykresów (i dlaczego) okazał się bliższy rzeczywistości, jak to zmierzyliście (zamieścić dane dotyczące podobieństwa).
+2) Jak wybrany okres symulacji powinien wpływać na dokładność symulacji i jak wpłynął w Waszym przypadku?
+
+
+1.
+Dane dotyczące różnic pomiędzy rzeczywistymi wartościami, a symulacjami:
+Suma różnic:
+	Pojedyńcza symulacja: 933506.8451036544
+	100 symulacji:        927121.4755591128
+Średnia dzienna różnica:
+	Pojedyńcza symulacja: 6101.351928782053
+	100 symulacji:        6059.617487314463
+Mediana różnic:
+	Pojedyńcza symulacja: 4063.396808729156
+	100 symulacji:        6456.912209182898
+Odchylenie standardowe różnic:
+	Pojedyńcza symulacja: 5318.804122513203
+	100 symulacji:        3073.162842388923
+
+Bliższy rzeczywistości (choć wciąż od niej daleki) okazał się wykres z uśrednienia 100 symulacji.
+
+2. Model opiera się przede wszystkim na przewidywaniu czy w kolejnych dniach będzie spadek czy wzrost wolumenu(jest on
+    przewidywany na podstawie 2 poprzednich dni). Złe ustalenie początkowych zmian wolumenu powinno powodować
+    zwiększanie się różnic pomiędzy symulowaną, a rzeczywistą wielkością w kolejnych dniach.
+    Wielkość wolumenu jest jednak bazowana na podstawie średniej wielkości z ciągu uczącego, dodając do tego możliwość
+    podobnego prawdopodobieństwa wzrostu albo spadku wielkości wolumenu w kolejnym dniu powoduje, że symulacja jest
+    podobnie niedokładna na całej długości okresu symulowanego.
